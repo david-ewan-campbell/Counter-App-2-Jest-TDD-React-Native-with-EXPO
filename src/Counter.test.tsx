@@ -29,6 +29,7 @@ describe("Counter", () => {
 
     const oneState = queryByText("Counter: 1");
     expect(oneState).not.toBeNull();
+    
   });
 
   it.todo("decrements by 1 each time decrement is pressed");
