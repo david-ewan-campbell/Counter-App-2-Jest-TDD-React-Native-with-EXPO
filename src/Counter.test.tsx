@@ -9,7 +9,12 @@ describe("Counter", () => {
     render(<Counter />);
   });
 
-  it.todo("shows an initial state of 0");
+  it("shows an initial state of 0", () => {
+    const { queryByText } = render(<Counter />);
+
+    const initialState = queryByText("Counter: 0");
+    expect(initialState).not.toBeNull();
+  });
 
   it.todo("increments by 1 each time increment is pressed");
 
