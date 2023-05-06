@@ -12,6 +12,11 @@ const Counter: FC = () => {
         onPress={() => setCounter(counter + 1)}
         testID="incrementButton"
       />
+      <Button
+        title="Decrement"
+        onPress={() => setCounter(counter - 1)}
+        testID="decrementButton"
+      />
     </View>
   );
 };
